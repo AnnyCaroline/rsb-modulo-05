@@ -58,3 +58,8 @@ Mais vantagens:
 ```
 yarn add react-icons
 ```
+
+------------------
+```
+yarn add axios
+```
