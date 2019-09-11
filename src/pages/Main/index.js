@@ -13,6 +13,23 @@ export default class Main extends Component {
         loading: false,
     };
 
+    // Carregar os dados do localStorage
+    componentDidMount() {
+        const repositories = localStorage.getItem('repositories');
+
+        if (repositories) {
+            this.setState({ repositories: JSON.parse(repositories) });
+        }
+    }
+
+    // Salvar os dados do localStorage
+    componentDidUpdate(_, prevState) {
+        const { repositories } = this.state;
+        if (prevState.repositories !== repositories) {
+            localStorage.setItem('repositories', JSON.stringify(repositories));
+        }
+    }
+
     handleInputChange = e => {
         this.setState({ newRepo: e.target.value });
     };
@@ -59,8 +76,8 @@ export default class Main extends Component {
                         {loading ? (
                             <FaSpinner color="#FFF" size={14} />
                         ) : (
-                                <FaPlus color="#FFF" size={14} />
-                            )}
+                            <FaPlus color="#FFF" size={14} />
+                        )}
                     </SubmitButton>
                 </Form>
 
