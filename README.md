@@ -54,6 +54,7 @@ Mais vantagens:
 - propriedades do js
 - encadeamento
 
-----------------------------
-
-Estilos globais
+## Ícones
+```
+yarn add react-icons
+```
