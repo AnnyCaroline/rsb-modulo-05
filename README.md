@@ -29,5 +29,14 @@ yarn
 -----------------------------
 
 ```
-yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D
+yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
 ```
+
+Diego falou para instalar o babel-eslint, mas não é pq já vem o Creat App.
+
+## Rotas
+```
+yarn add react-router-dom
+```
+
+- **rfc:** criar um componente de função com os snippets da RockSeat
