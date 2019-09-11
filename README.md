@@ -40,3 +40,16 @@ yarn add react-router-dom
 ```
 
 - **rfc:** criar um componente de função com os snippets da RockSeat
+
+## Styled Components
+```
+yarn add styled-components
+```
+Vários benefícios. Quais?
+Quando a app vai crescendo, isso vai ficando meio problemático. Quando um css está estilizando um h1, ele estiliza todos os h1s, não só o do componente. o Styled Component permite que o css seja só DO COMPONENTE.
+
+É bom ter a extensão vscode-styled-components instalada p/ que o vscode entenda a syntax
+
+Mais vantagens:
+- propriedades do js
+- encadeamento
