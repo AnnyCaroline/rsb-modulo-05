@@ -53,3 +53,7 @@ Quando a app vai crescendo, isso vai ficando meio problemático. Quando um css e
 Mais vantagens:
 - propriedades do js
 - encadeamento
+
+----------------------------
+
+Estilos globais
