@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import api from '../../services/api';
 
 import Container from '../../components/Container';
-import { Loading, Owner, IssueList } from './styles';
+import { Loading, Owner, IssueList, Label } from './styles';
 
 export default class Repository extends Component {
     // eslint-disable-next-line react/static-property-placement
@@ -83,9 +83,13 @@ export default class Repository extends Component {
                                         {issue.title}
                                     </a>
                                     {issue.labels.map(label => (
-                                        <span key={String(label.id)}>
-                                            {label.name}
-                                        </span>
+                                        <Label
+                                            key={String(label.id)}
+                                            color={label.color}
+                                        >
+                                            {' '}
+                                            {label.name}{' '}
+                                        </Label>
                                     ))}
                                 </strong>
                                 <p>{issue.user.login}</p>
